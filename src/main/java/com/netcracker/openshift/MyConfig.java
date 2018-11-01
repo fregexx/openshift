@@ -16,7 +16,4 @@ public class MyConfig {
     public void setMessage(String message) {
         this.message = message;
     }
-
-    // getter and setters
-
 }

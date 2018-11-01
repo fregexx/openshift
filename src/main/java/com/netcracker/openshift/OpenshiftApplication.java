@@ -1,26 +1,10 @@
 package com.netcracker.openshift;
 
-import io.fabric8.kubernetes.api.model.*;
-import io.fabric8.kubernetes.api.model.ConfigBuilder;
-import io.fabric8.kubernetes.client.*;
-import io.fabric8.kubernetes.client.Config;
-import io.fabric8.openshift.api.model.DeploymentConfig;
-import io.fabric8.openshift.api.model.Route;
-import io.fabric8.openshift.client.DefaultOpenShiftClient;
-import io.fabric8.openshift.client.OpenShiftClient;
-import io.fabric8.openshift.client.OpenShiftConfig;
-import io.fabric8.openshift.client.OpenShiftConfigBuilder;
-import io.fabric8.openshift.client.osgi.ManagedOpenShiftClient;
-import org.slf4j.MDC;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 
 @EnableDiscoveryClient
 @SpringBootApplication
@@ -30,9 +14,6 @@ public class OpenshiftApplication {
     private DiscoveryClient discoveryClient;
 
     public static void main(String[] args) {
-
-
-
         SpringApplication.run(OpenshiftApplication.class, args);
 /*
         //final String OAUTH_TOKEN = "jM7LaAuvh0TFQHpkYtB7qFV5TYxPLEUfHF3Yd-hvYjc";
