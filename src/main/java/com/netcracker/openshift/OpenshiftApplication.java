@@ -34,7 +34,7 @@ public class OpenshiftApplication {
 
 
         SpringApplication.run(OpenshiftApplication.class, args);
-
+/*
         //final String OAUTH_TOKEN = "jM7LaAuvh0TFQHpkYtB7qFV5TYxPLEUfHF3Yd-hvYjc";
         final String OAUTH_TOKEN = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJ1bm0tcWEiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlY3JldC5uYW1lIjoiYWRtaW4tYWNjb3VudC10b2tlbi04OTRxZCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJhZG1pbi1hY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiMTFlY2U3NmMtZDA3Ny0xMWU4LWE5MTQtMDAxNjNlMTQ2NmU2Iiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50OnVubS1xYTphZG1pbi1hY2NvdW50In0.pJXofMZXtYKb2E73HRGmAA6pxOlFZ-wBmPa5yGT2FXGKRWBLTeZ08USL9C9GvCkDhnRR08I7J5yMysyp4T4x7GXhF0F3IjNFOLmbEcB-58SUpmjPxE0wrzRwGD6sgz4ekeorClutGRwR-zw9f_d19HJIRawSgXVC46sl2SSkqLHENSwJ5cKKIHogSDBy-igio8PWy4MCIFoyt-Hq45v8LvV0cSyJKpURNx-JwdBWzWRyIcsKG7jBT_WUUKKHoXc-u93BS2svFfT3qkZAm1-LiMayMI4hZXGV0weNN7jCzx6yZdoY070v337x_dy4WPTs0zuOUS0zPBIjKLxz2gMHkg";
         final String OPENSHIFT_NAMESPACE = "unm-qa";
@@ -52,8 +52,6 @@ public class OpenshiftApplication {
         List<Service> services = null;
         List<Route> routes = null;
         List<DeploymentConfig> deplConfigs = null;
-
-
 
         try (OpenShiftClient osClient = new DefaultOpenShiftClient(osConfig)) {
             pods = osClient.pods().list().getItems();
@@ -98,6 +96,6 @@ public class OpenshiftApplication {
                     }
                 }
             }
-        }
+        }*/
     }
 }
