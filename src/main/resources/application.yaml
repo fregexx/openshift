@@ -18,5 +18,8 @@ management:
       base-path: /
 debug: false
 
+#bean:
+#  message: 124
+
 
 
